@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root{
+    /*text colors*/
+    --pale-violet: hsl(276, 100%, 81%);
+    --moderate-violet: hsl(276, 55%, 52%);
+    --desaturated-dark-violet: hsl(271, 15%, 43%);
+    --grayish-blue: hsl(206, 6%, 79%);
+    --very-dark-desaturated-violet: hsl(271, 36%, 24%);
+    --dark-grayish-violet: hsl(270, 7%, 64%);
+
+    /*gradient*/
+    --light-magenta: hsl(293, 100%, 63%);
+    --light-violet: hsl(264, 100%, 61%);
+
+    /*secondary*/
+    --white: hsl(0, 0%, 100%);
+    --light-grayish-violet: hsl(270, 20%, 96%);
+    --very-dark-desaturated-violet: hsl(271, 36%, 24%);
+    --very-light-magenta: hsl(289, 100%, 72%);
+
+}
+
+body{
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    background-color: var(--light-grayish-violet);
+    font-family: "Rubik", sans-serif;
+    overflow-x: hidden;
+}
+
+main{
+    max-width: fit-content;
+    display: flex;  
+}
+
+.elements{
+    width: 31.3rem;
+    height: 46.8rem;
+    position: absolute;
+    z-index: -1;
+}
+
+.left{
+    left: -5rem;
+    top: -3rem;
+    border-radius: 0 0 500px 500px;
+    background:linear-gradient(var(--light-magenta),var(--light-violet));
+}
+
+.right{
+    right: -13rem;
+    top: 10rem;
+    background-color: var(--grayish-blue);
+    border-radius: 500px 500px 0 0;
+    opacity: .1;
+}
+
+.application{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.device-design{
+    position: relative;
+    top: 9rem;
+    left: 26%;
+    width: 15rem;
+    height: 31.5rem;
+    background-color: var(--white);
+    padding: .6rem;
+    border-radius: 35px;
+    box-shadow: 10px 10px 15px var(--grayish-blue);
+}
+
+.camera{
+    width: 45%;
+    height: 1.3rem;
+    transform: translateX(50%);
+    position: absolute;
+    background-color: var(--white);
+    padding: 0 6px;
+    border-radius:0 0 15px 15px;
+}
+
+.header{
+    position: relative;
+    top: 3px;
+    width: 100%;
+    height: 4.2rem;
+    background:linear-gradient(to left, var(--light-magenta),var(--light-violet));
+    border-radius: 15px 15px 3px 3px;
+}
+
+.profile-info{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.fa-less-than,.fa-ellipsis-vertical{
+    width: 8px;
+    position: relative;
+    top: .5rem;
+}
+
+.profile-info > img{
+    width: 1.4rem;
+    height: 1.4rem;
+    border-radius: 50%;
+    border:1px solid var(--white);
+    position: relative;
+    top: .5rem;
+    right: 1pc;
+}
+.about{
+    position: relative;
+    font-size: 8px;
+    color: var(--white);
+    right: 2.5pc;
+}
+.about>h2{
+    margin-top: 2rem;
+    font-size: 11px;
+}
+
+.chat-body{
+    position: relative;
+    top: 0;
+    font-size: 8px;
+    border-radius:0 0 35px 35px;
+    max-height: max-content;
+    background-color: var(--light-grayish-violet);
+}
+
+.chat{
+    width: 7.5rem;
+    max-width: fit-content;
+    position: relative;
+    top: .8rem;
+    padding:.5rem;
+    margin:0 1rem .5rem;
+}
+
+.sender{
+    float: left;
+    color: var(--moderate-violet);
+    background-color:hsla(206, 7%, 79%, 0.534);
+    border-radius: 10px 10px 10px 1px;
+    box-shadow: 1px 1px 5px var(--dark-grayish-violet);
+}
+.receiver{
+   float: right;
+   background-color: var(--white);
+   border-radius: 10px 10px 1px 10px;
+   color: var(--desaturated-dark-violet);
+   box-shadow: 1px 1px 5px var(--dark-grayish-violet);
+}
+
+.payment{
+    position: relative;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    top: .4rem;
+}
+
+span{
+    font-weight: bold;
+    font-size: .7rem;
+    position: absolute;
+    top: 50%;
+    right: 1rem;
+}
+.opt{
+    max-width: 10rem;
+    border-radius: 10px 10px 10px 2px;
+    padding:.5rem 1rem;
+    color: var(--white);
+    accent-color: var(--very-light-magenta);
+    background:linear-gradient(to right, var(--light-magenta),var(--light-violet)) ;
+
+}
+
+input[type=radio]d{
+    border: 1px solid var(--very-light-magenta);
+    background-color: var(--light-magenta);
+}
+
+.images{
+    display: flex;
+    background-color: transparent;
+    justify-content: space-evenly;
+    float: right;
+}
+
+.dog-pic{
+    width: 3rem;
+    border-radius: 13px;
+    margin: 0 2px;
+}
+
+.text{
+    width: 80%;
+    padding:.5rem;
+    margin:1.6rem 1rem .5rem;
+    border-radius: 25px;
+    border: none;
+    color: var(--grayish-blue);
+}
+
+.submit{
+    font-size: 1.2rem;
+    position: absolute;
+    top: 23.5rem;
+    right: 1.3rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    text-align: center;
+    color: var(--white);
+    border-radius: 50%;
+    background-color: var(--very-dark-desaturated-violet);
+}
+
+.product-info{
+    position: sticky;
+    float: right;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    left: 15rem;
+    height: auto;
+    top: 30%;
+}
+
+.title{
+    font-size: 2.3rem;
+    color: var(--very-dark-desaturated-violet);
+}
+
+.desc{
+    margin:0 15rem 0 0;
+    line-height: 30px;
+    color: var(--dark-grayish-violet);
+}
+.attribution {
+    position: absolute;
+    bottom: 100vh;
+    font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media only screen and (max-width: 450px) {    
+    .left{
+        left: -20rem;
+        top: -17rem;
+    }
+    
+    .right{
+        display: none;
+    }
+    
+    .application{
+        display: flex;
+        flex-direction:column ;
+        justify-content: flex-start;
+        align-items: self-start;
+    }
+    
+    .device-design{
+        top: 5rem;
+        left: 12%;
+        width: 12rem;
+        height: 26.5rem;
+    }
+    
+    .camera{
+        height: 1rem;
+    }
+    
+    .header{
+        height: 3.5rem;
+    }
+    
+    .fa-less-than,.fa-ellipsis-vertical{
+        width: 5px;
+    }
+    
+    .profile-info > img{
+        width: 1rem;
+        height: 1rem;
+        top: .2rem;
+    }
+    .about{
+        position: relative;
+        font-size: 8px;
+        color: var(--white);
+        right: 1.5pc;
+    }
+    .about>h2{
+        margin-top: 1.5rem;
+        font-size: 8px;
+    }
+    
+    .chat{
+        width: 6rem;
+        padding:.2rem;
+    }
+    
+    span{
+        font-size: .5rem;
+        right: .4rem;
+    }
+    
+    .dog-pic{
+        width: 2.6rem;
+    }
+    
+    .submit{
+        font-size: 1rem;
+        top: 19.5rem;
+    }
+    
+    .product-info{
+        position:relative;
+        float: left;
+        display: block;
+        width: 100%;
+        text-align: center;
+        left: 0;
+        top: 7%;
+        margin: 1rem;
+    }
+    
+    .title{
+        font-size: 1.5rem;
+    }
+    
+    .desc{
+        margin:0;
+        font-size: .8rem;
+    }
+    .attribution {
+        position: absolute;
+        bottom: 100vh;
+        font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+}
